@@ -1,4 +1,4 @@
-module github.com/unixpickle/gobfuscate
+module github.com/zcrypt0/gobfuscate
 
 go 1.15
 
