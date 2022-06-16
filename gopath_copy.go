@@ -15,8 +15,13 @@ import (
 // and all of its dependencies.
 func CopyGopath(packageName, newGopath string, keepTests bool) error {
 	ctx := build.Default
+	
+	workingDir, err := os.Getwd()
+	if err != nil {
+		return err
+	}
 
-	rootPkg, err := ctx.Import(packageName, "", 0)
+	rootPkg, err := ctx.Import(packageName, workingDir, 0)
 	if err != nil {
 		return err
 	}
