@@ -33,7 +33,7 @@ func main() {
 	flag.BoolVar(&preservePackageName, "noencrypt", false,
 		"no encrypted package name for go build command (works when main package has CGO code)")
 	flag.BoolVar(&verbose, "verbose", false, "verbose mode")
-	flag.StringVar(&tags, "tags", "", "tags are passed to the go compiler")
+	flag.StringVar(&tags, "tags", "", "tags are passed to the go compiler!!!!")
 
 	flag.Parse()
 
